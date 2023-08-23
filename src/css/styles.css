@@ -5,7 +5,14 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./header.css');
+@import url('./hero.css');
+@import url('./aboutus.css');
+@import url('./price.css');
+@import url('./outproducts.css');
+@import url('./bestsellers.css');
+@import url('./clientrevie.css');
+@import url('./subscription.css');
+@import url('./footer.css');
 
 :root {
   --primary-font: "Roboto", sans-serif;
