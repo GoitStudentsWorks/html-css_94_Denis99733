@@ -74,6 +74,11 @@
   .second-list {
     width: calc((100% - 32px) / 2);
   }
+  .secondary-item {
+    display: flex;
+    gap: 0 32px;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (min-width: 1440px) {
   .container {
