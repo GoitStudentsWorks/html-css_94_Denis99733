@@ -16,8 +16,6 @@
   justify-content: center;
   margin-bottom: 21px;
 }
-.section-best-list {
-}
 
 .list {
   display: inline-flex;
@@ -67,12 +65,13 @@
     margin: 0 auto;
   }
   .list:not(:nth-child(-n + 2)) {
-    display: block;
+    display: inline-flex;
   }
-  .second-list {
+  .second-best-list {
     display: flex;
     flex-wrap: wrap;
-
+  }
+  .second-list {
     width: calc((100% - 32px) / 2);
   }
 }
