@@ -58,11 +58,11 @@
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 766px;
+    max-width: 704px;
   }
 }
 @media screen and (min-width: 1440px) {
   .container {
-    max-width: 838px;
+    max-width: 1094px;
   }
 }
