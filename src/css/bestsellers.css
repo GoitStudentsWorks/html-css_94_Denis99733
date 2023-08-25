@@ -69,10 +69,12 @@
   .list:not(:nth-child(-n + 2)) {
     display: block;
   }
-  /*.secondary-item {
+  .second-list {
     display: flex;
     flex-wrap: wrap;
-  }*/
+
+    width: calc((100% - 32px) / 2);
+  }
 }
 @media screen and (min-width: 1440px) {
   .container {
