@@ -25,10 +25,12 @@
   flex-direction: column;
   padding-bottom: 30px;
 }
+.best-list:not(:nth-child(-n + 3)) {
+  display: none;
+}
 .section-img {
 }
-.img {
-}
+
 .section-best-text {
   color: var(--blue-font, #0a224a);
   font-family: Roboto;
