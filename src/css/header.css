@@ -178,24 +178,22 @@
     }
 
     .page-header .container {
-        width: 1320px;
         max-width: 1320px;
         padding: 26px 60px;
     }
 
     .header-nav {
-        gap: 0;
+        gap: 212px;
     }
 
-    .header-icon-link {
+    /* .header-icon-link {
         margin-right: 370px;
-    }
+    } */
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-    .container {
+    .header-container {
         max-width: 375px;
-        margin: 0 auto;
     }
 
     .mobile-buttons {
