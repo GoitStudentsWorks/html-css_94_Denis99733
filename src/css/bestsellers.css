@@ -1,4 +1,5 @@
 .sectoin-best {
+  box-sizing: content-box;
 }
 
 .container {
@@ -101,11 +102,11 @@
   .first-item {
     float: left;
     width: 536px;
-    height: 637px;
+    /*height: 637px;*/
   }
   .secondary-item {
     width: 536px;
-    height: 637px;
+    /*height: 637px;*/
     margin-left: 560px;
   }
   .second-best-list {
