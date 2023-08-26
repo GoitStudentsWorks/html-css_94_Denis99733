@@ -1,7 +1,6 @@
 .sectoin-best {
 }
-.best-container {
-}
+
 .container {
 }
 .best-title {
@@ -68,16 +67,14 @@
     display: inline-flex;
   }
   .second-best-list {
-    /*display: flex;
-    flex-wrap: wrap;*/
+    display: flex;
+    gap: 0 32px;
+    flex-wrap: wrap;
   }
   .second-list {
     width: calc((100% - 32px) / 2);
   }
   .secondary-item {
-    display: flex;
-    gap: 0 32px;
-    flex-wrap: wrap;
   }
   .best-title {
     font-size: 32px;
@@ -96,9 +93,24 @@
 }
 @media screen and (min-width: 1440px) {
   .container {
-    max-width: 1094px;
-    padding-left: 172px;
-    padding-right: 172px;
+    max-width: 1096px;
+    /*padding-left: 172px;
+    padding-right: 172px;*/
     margin: 0 auto;
+  }
+  .first-item {
+    float: left;
+    width: 536px;
+    height: 637px;
+  }
+  .secondary-item {
+    width: 536px;
+    height: 637px;
+    margin-left: 560px;
+  }
+  .second-best-list {
+    gap: 0 20px;
+  }
+  .best-title {
   }
 }
