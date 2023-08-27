@@ -1,0 +1,101 @@
+<section class="subscription">
+  <div class="container subscribe-container">
+    <div class="form-container">
+      <h2 class="section-title">Newsletter</h2>
+      <p class="section-text">
+        Every week we will send you new designs and information about sales.
+      </p>
+      <form class="subscription-form">
+        <label class="subscribe-label" aria-label="subscribe name">
+          <input
+            type="text"
+            class="subscribe-input"
+            name="name"
+            id="name"
+            placeholder="Name"
+            required
+            minlength="2"
+            maxlength="16"
+          />
+          <span class="error-icon-wrap">
+            <svg class="error-icon" width="24" height="24">
+              <use
+                href="../img/Projecktsvg.svg#icon-baseline-error-outline"
+              ></use>
+            </svg>
+          </span>
+        </label>
+        <label class="subscribe-label" aria-label="subscribe email">
+          <input
+            type="email"
+            class="subscribe-input"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+            required
+          />
+          <span class="error-icon-wrap">
+            <svg class="error-icon" width="24" height="24">
+              <use
+                href="../img/Projecktsvg.svg#icon-baseline-error-outline"
+              ></use>
+            </svg>
+          </span>
+        </label>
+        <div class="checkbox-wrap">
+          <input
+            type="checkbox"
+            class="subscribe-agreement visually-hidden"
+            name="subscribe-agreement"
+            id="subscribe-agreement"
+            value="true"
+            required
+          />
+          <label for="subscribe-agreement" class="subscribe-agreement-label">
+            <span class="agreement-icon-wrap">
+              <svg class="agreement-icon" width="13" height="13">
+                <use href="../img/Projecktsvg.svg#icon-Property-1check"></use>
+              </svg>
+            </span>
+            Agree to subscribe to the newsletter
+          </label>
+        </div>
+        <button type="submit" class="subscribe-btn">Send</button>
+      </form>
+    </div>
+    <div class="product-pic">
+      <picture>
+        <source
+          srcset="
+            ../img/subscribpion/product14desk.jpg   1x,
+            ../img/subscribpion/product14desk2x.jpg 2x
+          "
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+            ../img/subscribpion/product11tab.jpg   1x,
+            ../img/subscribpion/product11tab2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ../img/subscribpion/product7mob.jpg   1x,
+            ../img/subscribpion/product7mob2x.jpg 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          srcset="
+            ../img/subscribpion/product7mob.jpg   1x,
+            ../img/subscribpion/product7mob2x.jpg 2x
+          "
+          src="../img/subscribpion/product7mob.jpg"
+          alt="Cozy design with sofa and table"
+          width="704"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
