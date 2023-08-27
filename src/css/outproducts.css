@@ -1,0 +1,126 @@
+.products {
+  padding: 64px 0;
+}
+
+.products-main {
+  color: var(--blue-font, #0a224a);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+/* .products-list {
+}
+
+.products-item {
+} */
+
+.products-item:not(:nth-child(-n + 1)) {
+  display: none;
+}
+
+.products-furniture {
+  margin-bottom: 16px;
+}
+
+.products-text {
+  color: var(--blue-font, #0a224a);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/*------------------------MOBILE 375px-----------------------*/
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+/*------------------------TABLET 768px-----------------------*/
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+    padding: 0 32px;
+  }
+
+  .products {
+    padding: 100px 0;
+  }
+
+  .products-main {
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+
+  .products-list {
+    gap: 16px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .products-item {
+    width: calc((100% - 16px) / 2);
+  }
+
+  .products-item:not(:nth-child(-n + 1)) {
+    display: block;
+  }
+
+  .products-item:not(:nth-child(-n + 2)) {
+    display: none;
+  }
+
+  .products-furniture {
+    margin-bottom: 15px;
+  }
+
+  .products-text {
+    font-size: 18px;
+  }
+}
+
+/*------------------------DESKTOP 1440px------------------------*/
+
+@media screen and (min-width: 1352px) {
+  .container {
+    max-width: 1352px;
+    padding: 0 60px;
+  }
+
+  .products {
+    padding: 100px 0;
+  }
+
+  .products-main {
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+
+  .products-list {
+    gap: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .products-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .products-item:not(:nth-child(-n + 1)) {
+    display: block;
+  }
+
+  .products-furniture {
+    width: 100%;
+    height: 300px;
+  }
+}
