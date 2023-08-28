@@ -149,6 +149,7 @@
   }
   .form-container {
     width: 536px;
+    align-items: flex-start;
   }
   .section-title {
     text-align: start;
