@@ -8,6 +8,7 @@
   padding-bottom: 64px;
 }
 .subscribe-container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
