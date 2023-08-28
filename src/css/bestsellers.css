@@ -17,15 +17,22 @@
   margin-bottom: 21px;
 }
 
-.list {
+.first-list {
   display: inline-flex;
   flex-direction: column;
   padding-bottom: 30px;
 }
-.list:not(:nth-child(-n + 2)) {
+.first-list:not(:nth-child(-n + 2)) {
   display: none;
 }
+
 .second-list {
+  display: inline-flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.second-list:not(:nth-child(-n + 2)) {
+  display: none;
 }
 .section-img {
 }
@@ -64,7 +71,10 @@
     padding-right: 32px;
     margin: 0 auto;
   }
-  .list:not(:nth-child(-n + 2)) {
+  .first-list:not(:nth-child(-n + 2)) {
+    display: inline-flex;
+  }
+  .second-list:not(:nth-child(-n + 2)) {
     display: inline-flex;
   }
   .second-best-list {
