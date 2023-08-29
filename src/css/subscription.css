@@ -187,14 +187,23 @@
   .subscribe-container {
     gap: 100px;
   }
-  .form-container {
-    width: 536px ;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 2.5px;
-}
+  .section-title {
+    margin-bottom: 32px;
+   }
+   .subscribe-label {
+    height: 52px;
+   }
+   .subscribe-btn {
+    height: 52px;
+   }
+  
+  
+  
+  
+  
+  
+  
+  
   
   .product-pic {
     max-width: 460px;
