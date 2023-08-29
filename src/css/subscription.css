@@ -172,14 +172,7 @@
   .product-pic {
     max-width: 704px;
   }
-  .form-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 2.5px;
-}
+ 
 }
 @media screen and (min-width: 1440px) {
   .container {
@@ -201,15 +194,7 @@
     justify-content: center;
     gap: 2.5px;
 }
-  .section-title {
-    margin-bottom: 32px;
-  }
-  .subscribe-label {
-    height: 52px;
-  }
-  .subscribe-btn {
-    height: 52px;
-  }
+  
   .product-pic {
     max-width: 460px;
   }
