@@ -176,7 +176,7 @@
  
 }
 @media screen and (min-width: 1440px) {
-  .container {
+  .container-subscription {
     max-width: 1440px;
     padding: 100px 172px 86px 172px;
   }

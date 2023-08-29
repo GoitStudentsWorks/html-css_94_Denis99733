@@ -177,6 +177,7 @@
     .page-header .container {
         max-width: 768px;
         padding: 0 32px;
+        margin-bottom: 64px;
     }
 
     .menu-container {
