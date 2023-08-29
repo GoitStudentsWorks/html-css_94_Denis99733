@@ -1,5 +1,5 @@
 .hero {
-    background-image: url(/img/hero-mob.jpg);
+    background-image: url(./img/hero-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 375px;
@@ -11,7 +11,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .hero {
-      background-image: url(/img/hero-mob@2x.jpg);
+      background-image: url(./img/hero-mob@2x.jpg);
     }
   }
   
@@ -58,8 +58,8 @@
 
   @media screen and (min-width: 768px) {
     .hero > .container {
-      background-image: url(/img/hero-product-tab-1.jpg),
-        url(/img/hero-product-tab-2.jpg);
+      background-image: url(./img/hero-product-tab-1.jpg),
+        url(./img/hero-product-tab-2.jpg);
       background-size: 308px 329px, 364px 531px;
       background-repeat: no-repeat;
       background-position: top 202px left 32px, top 0px left 372px;
@@ -69,8 +69,8 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
       .hero > .container {
-        background-image: url(/img/hero-product-tab-1@2x.jpg),
-          url(/img/hero-product-tab-2@2x.jpg);
+        background-image: url(./img/hero-product-tab-1@2x.jpg),
+          url(./img/hero-product-tab-2@2x.jpg);
       }
     }
   
@@ -104,8 +104,8 @@
 
   @media screen and (min-width: 1440px) {
     .hero > .container {
-      background-image: url(/img/hero-product-desk-1.jpg),
-        url(/img/hero-product-desk-2.jpg), url(/img/hero-product-desk-3.jpg);
+      background-image: url(./img/hero-product-desk-1.jpg),
+        url(./img/hero-product-desk-2.jpg), url(./img/hero-product-desk-3.jpg);
       background-size: 310px 329px, 648px 530px, 312px, 337px;
       background-repeat: no-repeat;
       background-position: top 202px left 60px, top 0px left 395px,
@@ -116,8 +116,8 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
       .hero > .container {
-        background-image: url(/img/hero-product-desk-1@2x.jpg),
-          url(/img/hero-product-desk-2@2x.jpg), url(/img/hero-product-desk-3@2x.jpg);
+        background-image: url(./img/hero-product-desk-1@2x.jpg),
+          url(./img/hero-product-desk-2@2x.jpg), url(./img/hero-product-desk-3@2x.jpg);
       }
     }
   
