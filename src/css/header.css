@@ -175,7 +175,7 @@
 @media screen and (min-width: 768px) and (max-width: 1439px) {
 
     .page-header .container {
-        max-width: 1439px;
+        max-width: 768px;
         padding: 0 32px;
     }
 
