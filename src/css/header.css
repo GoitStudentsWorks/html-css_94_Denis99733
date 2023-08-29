@@ -1,6 +1,6 @@
 /* -----------------------Header----------------------- */
 
-.page-header .container {
+.page-header .container-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -174,7 +174,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
 
-    .page-header .container {
+    .page-header .container-header {
         max-width: 768px;
         padding: 0 32px;
         margin-bottom: 64px;
