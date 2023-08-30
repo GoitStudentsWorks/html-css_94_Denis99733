@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+    <title>Team_16 Work</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/html-css_94_Denis99733/assets/apple-touch-icon-4835de5f.png">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABaFBMVEX////29vbu7u7x8fH+/v719fXy8vL09PTt7e3z8/P9/f339/f8/Pzx8PDv7+75+fj8+/vw8O/w7+76+vn7+/rw7+/7+/v8/Pv9/Pzy8fH5+Pf0+Prj7fXW4enV4Ojd6PDj7vbf6/PV4ene6fHf6vLV4One6vLf6vPd6PHW4erj7fT0+Pv//v7y9/qdw99Slsk5h8M0hMI1hMI1hcKdw97x9vn0+fx7sNcdd7wXc7oYdLoYdLscd7ufw94heb0ZdLsadbufw99KkMYke70ZdbsbdbsYdLw1f6vewUj7zDf5yzj5zUH4zUH202H5yzb35av5zT75yzf5zD7+/PX74Yz5zDr5yjX74Y3+/Pb9/v78+/P45ar31Wj50VL50E/50FD45qr9+/P39/j8+/T79ubx69nw6tj48uD++Ob69ePw69j58+H69OLx7Nnv7/Du7u/4+Pn7+/zu7/D5+fr6+vvu7vDt7u/v8PHUaSsoAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+cIHQ8GHvKfmMEAAAFWSURBVDjLvZNpNwIBGIXvLNXQZl/CGGUXUkgTNcq+DGPPMqimopQS/r4m5zin0swnnnPe++Xej+8DgCApGgbSSMPEtIBuYUygjYwBrRRJQIVg1AHTMKApRh0QBGE2q9ckQDJmWKw2O9raOzrR1d3dg05bey/sNmsfzAwJqt8xMDjEDnMjTtbFjY6NjXMu1jnBTbJT0zMOioJ7dm7es+D1+Xze+vDMLy65sexfCfDBIM//EoFV/wzWQmGhKeHQOiK8oAEfQVSrFzai2BS0gfD3gy0dsK0DdnTArg7Y0+E/Bvva/QEORa1ePMTRsdS8l06OcHp2fiFKkiSK6tXGxfnlFWLXN7d3sizfyw1xd/vwGANFxRNJJZXOPCnP2UxOUXKZbKoS6dRLMhGvvH1VnHzhFcVS4Q3l91IZb4V8Ea8fn5aqOBrWfatXK6+xUd6q/q0/+tP1+n8B6kLcX6GkIeEAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDgtMjlUMTU6MDY6MzArMDA6MDA2s23vAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTA4LTI5VDE1OjA2OjMwKzAwOjAwR+7VUwAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg==">
+<link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAsVBMVEX+/v7z8/P39/f5+fnx8fH8/Pzy8vL4+Pj7+vn5+Pf49/b8+/r39fX8+vn59/f59/bt8fSyz+WKttmHtNeLuNuFs9aKuNuHtdiCtNkheb0Xc7oofb4ZdLsadbsYdLw1f6vewUj7zDf5yzj4zUT5yzf64pL5zD75yjX5yzb74pP29e756rv34Zj235b645r13pT645n34Jb335b4+fv29/n19vj5+vz09Pb5+fv29vj///9NDI0YAAAAAWJLR0Q6TgnE+gAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+cIHQ8GHvKfmMEAAACNSURBVBjTXc/HDoJQAETRefSq9CJgA0EBKVKE//8xY+IC31lMMssLEIbleEEUBZ5jGQIQSVZUTd/tdU1VZInAMC3bcT3f91zHtkwDQXjYCANEcbIRR0goOFJwouBMwYWCKwVptr1ZilteFMW9+E3+QFnVz6bt+r5rm1ddlSDDOM3vZV2X9zyNwzf3P/8DzIQb4+hgKLgAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDgtMjlUMTU6MDY6MzArMDA6MDA2s23vAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTA4LTI5VDE1OjA2OjMwKzAwOjAwR+7VUwAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg==">
+<link rel="manifest" href="data:application/manifest+json;base64,ewogICAgIm5hbWUiOiAiIiwKICAgICJzaG9ydF9uYW1lIjogIiIsCiAgICAiaWNvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS0xOTJ4MTkyLnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS0yNTZ4MjU2LnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICIyNTZ4MjU2IiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0KICAgIF0sCiAgICAidGhlbWVfY29sb3IiOiAiI2ZmZmZmZiIsCiAgICAiYmFja2dyb3VuZF9jb2xvciI6ICIjZmZmZmZmIiwKICAgICJkaXNwbGF5IjogInN0YW5kYWxvbmUiCn0K">
+<link rel="mask-icon" href="/html-css_94_Denis99733/assets/safari-pinned-tab-42e263c5.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#b91d47">
+<meta name="theme-color" content="#ffffff">
+    
+    <script type="module" crossorigin src="/html-css_94_Denis99733/assets/index-45ca9f73.js"></script>
+    <link rel="stylesheet" href="/html-css_94_Denis99733/assets/index-f8478aed.css">
+  </head>
+  <body>
+    <header> <!-- Header -->
+<section class="page-header">
+  <div class="header-container container">
+    <nav class="header-nav">
+      <a href="#" class="header-icon-link">
+        <svg class="header-icon" width="127" height="16">
+          <use href="/html-css_94_Denis99733/assets/Projecktsvg-bf992a6a.svg#icon-logo-7"></use>
+        </svg>
+      </a>
+      <ul class="list-header list">
+        <li>
+          <a href="" class="page-link link">About us</a>
+        </li>
+        <li>
+          <a href="" class="page-link link">Our products</a>
+        </li>
+        <li><a href="" class="page-link link">Prices</a></li>
+        <li>
+          <a href="" class="page-link link">Bestsellers</a>
+        </li>
+        <li>
+          <a href="" class="page-link link">Reviews</a>
+        </li>
+        <li><a href="" class="page-link link">Contacts</a></li>
+      </ul>
+    </nav>
+    <button
+      type="button"
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="open-button-svg" width="40" height="40">
+        <use href="/html-css_94_Denis99733/assets/Projecktsvg-bf992a6a.svg#icon-align-justify"></use>
+      </svg>
+    </button>
+  </div>
+  <!-- Menu -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="mobile-buttons">
+      <a href="#" class="header-icon-link">
+        <svg class="header-icon" width="128" height="17">
+          <use href="/html-css_94_Denis99733/assets/Projecktsvg-bf992a6a.svg#icon-logo-7"></use>
+        </svg>
+      </a>
+      <button type="button" class="menu-toggle js-close-menu">
+        <svg class="close-button-svg" width="20" height="20">
+          <use href="/html-css_94_Denis99733/assets/Projecktsvg-bf992a6a.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+      </button>
+    </div>
+    <ul class="mobile-menu list">
+      <li>
+        <a href="" class="mobile-link link">About us</a>
+      </li>
+      <li>
+        <a href="" class="mobile-link link">Our products</a>
+      </li>
+      <li><a href="" class="mobile-link link">Prices</a></li>
+      <li>
+        <a href="" class="mobile-link link">Bestsellers</a>
+      </li>
+      <li>
+        <a href="" class="mobile-link link">Reviews</a>
+      </li>
+      <li><a href="" class="mobile-link link">Contacts</a></li>
+    </ul>
+  </div>
+</section>
+ </header>
+
+    <main>
+      <!-- <section class="hero">
+    <div class="hero-container">
+        <h1 class="hero-title">MODERN AND MINIMALIST FURNITURE FOR YOU</h1>
+        <div class="hero-container">
+        <p class="hero-text">Add a touch of elegance to your space with handcrafted furniture pieces</p>
+        <a href="#subscribe" class="hero-subscribe link">Subscribe</a>
+    </div>
+    </div>
+</section> -->
+      <section class="about-us container">
+  <div class="about-us-text-content">
+    <h2 class="about-us-title">About us</h2>
+    <h3 class="about-us-subtitle">
+      Our craftsmanship: creating unique handmade furniture
+    </h3>
+    <p class="about-us-description">
+      Discover the inspiration behind our modern and minimalist designs, and see
+      how we bring them to life through our skilled craftsmanship.
+    </p>
+    <ul class="about-us-advantages-list">
+      <li class="about-us-advantages-item">
+        <div class="about-us-statistic">
+          <p class="about-us-statistic-number">5+</p>
+          <p class="about-us-statistic-text">
+            Years of experience creating handcrafted furniture
+          </p>
+        </div>
+      </li>
+      <li class="about-us-advantages-item">
+        <div class="about-us-statistic">
+          <p class="about-us-statistic-number">100%</p>
+          <p class="about-us-statistic-text">
+            Sustainably sourced materials used in all of our furniture
+          </p>
+        </div>
+      </li>
+      <li class="about-us-advantages-item">
+        <div class="about-us-statistic">
+          <p class="about-us-statistic-number">500+</p>
+          <p class="about-us-statistic-text">
+            Unique furniture designs crafted by our skilled artisans
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <img
+    class="about-us-img-mob"
+    srcset="/html-css_94_Denis99733/assets/about-us-img-mob-8a94b899.jpg 1x, /html-css_94_Denis99733/assets/about-us-img-mob-2x-30ef6510.jpg 2x"
+    src="/html-css_94_Denis99733/assets/about-us-img-mob-8a94b899.jpg"
+    alt="Light gray sofa with pillows and a vase on the side"
+  />
+  <img
+    class="about-us-img-tab"
+    srcset="/html-css_94_Denis99733/assets/about-us-img-tab-65b44f97.jpg 1x, /html-css_94_Denis99733/assets/about-us-img-tab-2x-2f822966.jpg 2x"
+    src="/html-css_94_Denis99733/assets/about-us-img-tab-65b44f97.jpg"
+    alt="Light gray sofa with pillows and a vase on the side"
+  />
+  <img
+    class="about-us-img-desktop"
+    srcset="/html-css_94_Denis99733/assets/about-us-img-desktop-7a433d14.jpg 1x, /html-css_94_Denis99733/assets/about-us-img-desktop-2x-5482c396.jpg 2x"
+    src="/html-css_94_Denis99733/assets/about-us-img-desktop-7a433d14.jpg"
+    alt="Light gray sofa with pillows and a vase on the side"
+  />
+</section>
+
+      <section class="price container">
+  <h2 class="visually-hidden">Chairs Tables Dressers Sofas Price</h2>
+  <ul>
+    <li class="price-list-item">
+      <div class="price-list-line">
+        <div class="hover-effect"><p class="price-list-art">Chairs</p></div>
+        <p class="price-list-amount">from 200$</p>
+      </div>
+    </li>
+    <li class="price-list-item">
+      <div class="price-list-line">
+        <div class="hover-effect"><p class="price-list-art">Tables</p></div>
+        <p class="price-list-amount">from 250$</p>
+      </div>
+    </li>
+    <li class="price-list-item">
+      <div class="price-list-line">
+        <div class="hover-effect"><p class="price-list-art">Dressers</p></div>
+        <p class="price-list-amount">from 300$</p>
+      </div>
+    </li>
+    <li class="price-list-item">
+      <div class="price-list-line">
+        <div class="hover-effect"><p class="price-list-art">Sofas</p></div>
+        <p class="price-list-amount">from 500$</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+      <section class="products">
+  <div class="container">
+    <h2 class="products-main">OUR PRODUCTS</h2>
+    <ul class="products-list list">
+      <li class="products-item">
+        <picture>
+          <source
+            srcset="/html-css_94_Denis99733/assets/our-shelf-mob-b6c3409e.jpg 1x, /html-css_94_Denis99733/assets/our-shelf-mob@2x-b5e4cdde.jpg 2x"
+            media="(min-width:375px)"
+          />
+          <source
+            srcset="/html-css_94_Denis99733/assets/our-shelf-tab-9294e912.jpg 1x, /html-css_94_Denis99733/assets/our-shelf-tab@2x-de364d91.jpg 2x"
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="/html-css_94_Denis99733/assets/our-shelf-desk-2004edd9.jpg 1x, /html-css_94_Denis99733/assets/our-shelf-desk@2x-85a41382.jpg 2x"
+            media="(min-width:1352px)"
+          />
+          <img
+            class="products-furniture"
+            src="/html-css_94_Denis99733/assets/our-shelf-desk-2004edd9.jpg"
+            alt="shelf"
+            width="344"
+          />
+        </picture>
+        <h3 class="products-text">Minimalist storage solutions</h3>
+      </li>
+      <li class="products-item">
+        <picture>
+          <!-- <source
+            srcset="./img/our-sofa-mob.jpg 1x, ./img/our-sofa-mob@2x.jpg 2x"
+            media="(min-width:375px)"
+          /> -->
+          <source
+            srcset="/html-css_94_Denis99733/assets/our-sofa-tab-fdbd3f21.jpg 1x, /html-css_94_Denis99733/assets/our-sofa-tab@2x-54dc0c32.jpg 2x"
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="/html-css_94_Denis99733/assets/our-sofa-desk-e1929ed4.jpg 1x, /html-css_94_Denis99733/assets/our-sofa-desk@2x-d8d826fb.jpg 2x"
+            media="(min-width:1352px)"
+          />
+          <img
+            class="products-furniture"
+            src="/html-css_94_Denis99733/assets/our-sofa-desk-e1929ed4.jpg"
+            alt="sofa"
+            width="344"
+          />
+        </picture>
+        <h3 class="products-text">Handcrafted minimalist seating</h3>
+      </li>
+      <li class="products-item">
+        <picture>
+          <!-- <source
+            srcset="./img/our-table-mob.jpg 1x, ./img/our-table-mob@2x.jpg 2x"
+            media="(min-width:375px)"
+          /> -->
+          <!-- <source
+            srcset="./img/our-table-tab.jpg 1x, ./img/our-table-tab@2x.jpg 2x"
+            media="(min-width:768px)"
+          /> -->
+          <source
+            srcset="/html-css_94_Denis99733/assets/our-table-desk-5a6747c2.jpg 1x, /html-css_94_Denis99733/assets/our-table-desk@2x-5190a1b0.jpg 2x"
+            media="(min-width:1352px)"
+          />
+          <img
+            class="products-furniture"
+            src="/html-css_94_Denis99733/assets/our-table-desk-5a6747c2.jpg"
+            alt="table"
+            width="312"
+          />
+        </picture>
+        <h3 class="products-text">Sleek and simple tables</h3>
+      </li>
+      <li class="products-item">
+        <picture>
+          <!-- <source
+            srcset="./img/our-chair-mob.jpg 1x, ./img/our-chair-mob@2x.jpg 2x"
+            media="(min-width:320px)"
+          /> -->
+          <!-- <source
+            srcset="./img/our-chair-tab.jpg 1x, ./img/our-chair-tab@2x.jpg 2x"
+            media="(min-width:768px)"
+          /> -->
+          <source
+            srcset="/html-css_94_Denis99733/assets/our-chair-desk-df5d113e.jpg 1x, /html-css_94_Denis99733/assets/our-chair-desk@2x-72edba20.jpg 2x"
+            media="(min-width:1352px)"
+          />
+          <img
+            class="products-furniture"
+            src="/html-css_94_Denis99733/assets/our-chair-desk-df5d113e.jpg"
+            alt="chair"
+            width="312"
+          />
+        </picture>
+        <h3 class="products-text">Minimalist seating for every space</h3>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="sectoin-best">
+  <div class="best-container container">
+    <h2 class="best-title">bestsellers</h2>
+    <div class="first-item">
+      <ul class="first-best-list">
+        <li class="first-list list">
+          <picture>
+            <source
+              srcset="/html-css_94_Denis99733/assets/platformbeddesk-1x-c2e69d39.jpg 1x, /html-css_94_Denis99733/assets/platformbeddesk-2x-976bf288.jpg 2x"
+              media="(min-width: 1094px)"
+            />
+            <source
+              srcset="/html-css_94_Denis99733/assets/platformbedtab-1x-07058659.jpg 1x, /html-css_94_Denis99733/assets/platformbedtab-2x-28722808.jpg 2x"
+              media="(min-width: 704px)"
+            />
+            <source
+              srcset="/html-css_94_Denis99733/assets/platformbedmob-1x-a79c9577.jpg 1x, /html-css_94_Denis99733/assets/platformbedmob-2x-e993ca36.jpg 2x"
+              media="(min-width: 343px)"
+            />
+            <img
+              class="section-img img"
+              src="/html-css_94_Denis99733/assets/platformbedmob-1x-a79c9577.jpg"
+              alt="modern bed"
+              width="704"
+            />
+          </picture>
+
+          <h3 class="section-best-text">The modern platform bed</h3>
+          <span class="products-coast">750$</span>
+        </li>
+      </ul>
+    </div>
+    <div class="secondary-item">
+      <ul class="second-best-list">
+        <li class="second-list list">
+          <picture>
+            <source
+              srcset="/html-css_94_Denis99733/assets/loungechairdesk-1x-bc7aa208.jpg 1x, /html-css_94_Denis99733/assets/loungechairdesk-2x-f9fb7edc.jpg 2x"
+              media="(min-width: 1094px)"
+            />
+            <source
+              srcset="/html-css_94_Denis99733/assets/loungechairtab-1x-6e7fb714.jpg 1x, /html-css_94_Denis99733/assets/loungechairtab-2x-f8d2142c.jpg 2x"
+              media="(min-width: 704px)"
+            />
+            <source
+              srcset="/html-css_94_Denis99733/assets/loungechairmob-1x-15be44b6.jpg 1x, /html-css_94_Denis99733/assets/loungechairmob-2x-33c776f0.jpg 2x"
+              media="(min-width: 343px)"
+            />
+            <img
+              class="section-img img"
+              src="/html-css_94_Denis99733/assets/loungechairmob-1x-15be44b6.jpg"
+              alt="lounge chair"
+              width="704"
+            />
+          </picture>
+
+          <h3 class="section-best-text">The Cozy Lounge Chair</h3>
+          <span class="products-coast">230$</span>
+        </li>
+
+        <li class="second-list list">
+          <picture>
+            <source
+              srcset="/html-css_94_Denis99733/assets/accentchairdesk-1x-c5e5003b.jpg 1x, /html-css_94_Denis99733/assets/accentchairdesk-2x-f52915de.jpg 2x"
+              media="(min-width: 1094px)"
+            />
+            <source
+              srcset="/html-css_94_Denis99733/assets/accentchairtab-1x-ac8882eb.jpg 1x, /html-css_94_Denis99733/assets/accentchairtab-2x-9260b72d.jpg 2x"
+              media="(min-width: 704px)"
+            />
+            <source
+              srcset="/html-css_94_Denis99733/assets/accentchairmob-1x-7a47c305.jpg 1x, /html-css_94_Denis99733/assets/accentchairmob-2x-3fe7c16b.jpg 2x"
+              media="(min-width: 343px)"
+            />
+            <img
+              class="section-img img"
+              src="/html-css_94_Denis99733/assets/accentchairmob-1x-7a47c305.jpg"
+              alt="accent chair"
+              width="704"
+            />
+          </picture>
+
+          <h3 class="section-best-text">The indastrial accent chair</h3>
+          <span class="products-coast">250$</span>
+        </li>
+        <li class="second-list list">
+          <picture>
+            <source
+              srcset="/html-css_94_Denis99733/assets/sleekstanddesk-1x-648e0ead.jpg 1x, /html-css_94_Denis99733/assets/sleekstanddesk-2x-d06efd0d.jpg 2x"
+              media="(min-width: 1094px)"
+            />
+            <source
+              srcset="/html-css_94_Denis99733/assets/sleekstandtab-1x-cb4084ec.jpg 1x, /html-css_94_Denis99733/assets/sleekstandtab-2x-a72a9c0b.jpg 2x"
+              media="(min-width: 704px)"
+            />
+            <source
+              srcset="/html-css_94_Denis99733/assets/sleekstandtab-1x-cb4084ec.jpg 1x, /html-css_94_Denis99733/assets/sleekstandtab-2x-a72a9c0b.jpg 2x"
+              media="(min-width: 343px)"
+            />
+            <img
+              class="section-img img"
+              src="/html-css_94_Denis99733/assets/sleekstandtab-1x-cb4084ec.jpg"
+              alt="sleek stand"
+              width="704"
+            />
+          </picture>
+
+          <h3 class="section-best-text">The sleek stand</h3>
+          <span class="products-coast">300$</span>
+        </li>
+        <li class="second-list list">
+          <picture>
+            <source
+              srcset="/html-css_94_Denis99733/assets/minimalsofadesk-1x-df91b9fa.jpg 1x, /html-css_94_Denis99733/assets/minimalsofadesk-2x-50478e61.jpg 2x"
+              media="(min-width: 1094px)"
+            />
+            <source
+              srcset="/html-css_94_Denis99733/assets/minimalsofatab-1x-2e173934.jpg 1x, /html-css_94_Denis99733/assets/minimalsofatab-2x-0fa9d94b.jpg 2x"
+              media="(min-width: 704px)"
+            />
+            <source
+              srcset="/html-css_94_Denis99733/assets/minimalsofatab-1x-2e173934.jpg 1x, /html-css_94_Denis99733/assets/minimalsofatab-2x-0fa9d94b.jpg 2x"
+              media="(min-width: 343px)"
+            />
+            <img
+              class="section-img img"
+              src="/html-css_94_Denis99733/assets/minimalsofatab-1x-2e173934.jpg"
+              alt="minimalist sofa"
+              width="704"
+            />
+          </picture>
+
+          <h3 class="section-best-text">The minimalist sofa</h3>
+          <span class="products-coast">650$</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="clients-reviews">
+  <div class="container clients-reviews-div">
+    <h2 class="clients-reviews-title">Clients reviews</h2>
+    <ul class="clients-reviews-list">
+      <li class="clients-reviews-list-item">
+        <div class="clients-reviews-block">
+          <img
+            src="/html-css_94_Denis99733/assets/girldesk-866e886c.png"
+            alt="Alexandra Dream"
+            width="48"
+          />
+          <div class="clients-reviews-block-block">
+            <h3 class="clients-reviews-item">Alexandra Dream</h3>
+            <p class="clients-reviews-item-time">1 week ago</p>
+          </div>
+        </div>
+        <p class="clients-reviews-item-text">
+          I was blown away by the quality and craftsmanship of the furniture I
+          received from this company. Each piece was unique and beautifully
+          designed, and you can tell that a lot of thought and care goes into
+          every detail.
+        </p>
+      </li>
+      <li class="clients-reviews-list-item">
+        <div class="clients-reviews-block">
+          <img
+            src="/html-css_94_Denis99733/assets/mandesk-4ab234d2.png"
+            alt="James Williams"
+            width="48"
+          />
+          <div class="clients-reviews-block-block">
+            <h3 class="clients-reviews-item">James Williams</h3>
+            <p class="clients-reviews-item-time">A week ago</p>
+          </div>
+        </div>
+        <p class="clients-reviews-item-text">
+          The "Minimal" furniture set is a fantastic addition to my home. It
+          boasts a minimalist design, enhancing the feel and look of my living
+          space. The sturdy construction is worth noting too, which speaks
+          volumes about its durability.
+        </p>
+      </li>
+      <li class="clients-reviews-list-item">
+        <div class="clients-reviews-block">
+          <img
+            src="/html-css_94_Denis99733/assets/girldesk2-21ff1227.jpg"
+            alt="Emily Watson"
+            width="48"
+          />
+          <div class="clients-reviews-block-block">
+            <h3 class="clients-reviews-item">Emily Watson</h3>
+            <p class="clients-reviews-item-time">3 week ago</p>
+          </div>
+        </div>
+        <p class="clients-reviews-item-text">
+          The "Minimal" furniture set has far exceeded my expectations. The
+          sleek design combined with the high-quality materials have not only
+          added an exceptional aesthetic to my space but also offered an
+          uncompromising standard of comfort.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="subscription">
+  <div class="container subscribe-container">
+    <div class="form-container">
+      <h2 class="section-title">Newsletter</h2>
+      <p class="section-text">
+        Every week we will send you new designs and information about sales.
+      </p>
+      <form class="subscription-form">
+        <label class="subscribe-label" aria-label="subscribe name">
+          <input
+            type="text"
+            class="subscribe-input"
+            name="name"
+            id="name"
+            placeholder="Name"
+            required
+            minlength="2"
+            maxlength="16"
+          />
+          <span class="error-icon-wrap">
+            <svg class="error-icon" width="24" height="24">
+              <use
+                href="/html-css_94_Denis99733/assets/Projecktsvg-bf992a6a.svg#icon-baseline-error-outline"
+              ></use>
+            </svg>
+          </span>
+        </label>
+        <label class="subscribe-label" aria-label="subscribe email">
+          <input
+            type="email"
+            class="subscribe-input"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+            required
+          />
+          <span class="error-icon-wrap">
+            <svg class="error-icon" width="24" height="24">
+              <use
+                href="/html-css_94_Denis99733/assets/Projecktsvg-bf992a6a.svg#icon-baseline-error-outline"
+              ></use>
+            </svg>
+          </span>
+        </label>
+        <div class="checkbox-wrap">
+          <input
+            type="checkbox"
+            class="subscribe-agreement visually-hidden"
+            name="subscribe-agreement"
+            id="subscribe-agreement"
+            value="true"
+            required
+          />
+          <label for="subscribe-agreement" class="subscribe-agreement-label">
+            <span class="agreement-icon-wrap">
+              <svg class="agreement-icon" width="13" height="13">
+                <use href="/html-css_94_Denis99733/assets/Projecktsvg-bf992a6a.svg#icon-Property-1check"></use>
+              </svg>
+            </span>
+            Agree to subscribe to the newsletter
+          </label>
+        </div>
+        <button type="submit" class="subscribe-btn">Send</button>
+      </form>
+    </div>
+    <div class="product-pic">
+      <picture>
+        <source
+          srcset="/html-css_94_Denis99733/assets/product14desk-8bc2aa4b.jpg 1x, /html-css_94_Denis99733/assets/product14desk2x-3c4a454a.jpg 2x"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="/html-css_94_Denis99733/assets/product11tab-c841e9ed.jpg 1x, /html-css_94_Denis99733/assets/product11tab2x-a42c72f7.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/html-css_94_Denis99733/assets/product7mob-25767488.jpg 1x, /html-css_94_Denis99733/assets/product7mob2x-9289736d.jpg 2x"
+          media="(min-width: 320px)"
+        />
+        <img
+          srcset="/html-css_94_Denis99733/assets/product7mob-25767488.jpg 1x, /html-css_94_Denis99733/assets/product7mob2x-9289736d.jpg 2x"
+          src="/html-css_94_Denis99733/assets/product7mob-25767488.jpg"
+          alt="Cozy design with sofa and table"
+          width="704"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer>
+      <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-svg">
+        <div id="contacts" class="footer-logo">
+          <a class="footer-links-logo" target="_blank" href="index.html">
+            <svg class="footer-logo-icon" width="100" height="16">
+              <use href="/html-css_94_Denis99733/assets/Projecktsvg-bf992a6a.svg#icon-td-logo"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer-media">
+          <ul class="footer-list-media">
+            <li>
+              <a href="https://uk-ua.facebook.com" target="_blank" class="footer-svg-link">
+                <svg class="footer-social" width="28" height="28">
+                  <use href="/html-css_94_Denis99733/assets/Projecktsvg-bf992a6a.svg#icon-ph_facebook-logo"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" target="_blank" class="footer-svg-link">
+                <svg class="footer-social" width="28" height="28">
+                  <use href="/html-css_94_Denis99733/assets/Projecktsvg-bf992a6a.svg#icon-ph_instagram-logo"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com" class="footer-svg-link">
+                <svg class="footer-social" width="28" height="28">
+                  <use href="/html-css_94_Denis99733/assets/Projecktsvg-bf992a6a.svg#icon-ph_youtube-logo"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-page">
+        <ul class="footer-page-list">
+          <li class="footer-page-item">
+            <a href="#about" class="footer-page-link link">About us</a>
+          </li>
+          <li class="footer-page-item">
+            <a href="#products" class="footer-page-link link">Our products</a>
+          </li>
+          <li class="footer-page-item">
+            <a href="#prices" class="footer-page-link link">Prices</a>
+          </li>
+          <li class="footer-page-item">
+            <a href="#bestsellers" class="footer-page-link link">Bestsellers</a>
+          </li>
+          <li class="footer-page-item">
+            <a href="#reviews" class="footer-page-link link">Reviews</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-adress">
+        <ul class="footer-adress-list">
+          <li class="footer-adress-item">
+            <a href="">Obolonsky Prospect, 14, Kyiv</a>
+          </li>
+          <li class="footer-times-item">
+            <p class="footer-times">Daily 10:00-21:00</p>
+          </li>
+        </ul>
+      </div>
+      <address class="footer-contacts">
+        <div class="footer-contacts-wrap">
+          <ul class="footer-contacts-list">
+            <li class="footer-contacts-item">
+              <a href="tel:+380669384758" class="footer-contacts-link link">+380669384758</a>
+            </li>
+            <li class="footer-contacts-item footer-contacts-item-link">
+              <a href="tel:+380679384758" class="footer-contacts-link link">+380679384758</a>
+            </li>
+            </ul>
+        </div>
+          <div class="footer-contacts-item">
+            <a href="mailto:minimal.furniture@gmail.com"
+              class="footer-contacts-link link hiddan-mail">minimal.furniture@gmail.com</a>
+            </div>
+      </address>
+      <p class="footer-privacy">By using this website, you agree to the <a href="#" class="footer-privacy-polisy link">Terms
+          of Service</a> and <a href="#" class="footer-privacy-polisy link">Privacy Policy</a></p>
+    </div>
+  </footer>
+    </footer>
+  
+
+    
+  </body>
+</html>
